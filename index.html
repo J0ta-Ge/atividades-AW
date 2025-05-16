@@ -6,6 +6,63 @@
     <title>Formulário</title>
 </head>
 <body>
-    
+    <form action="#" method="get" onsubmit="alert('Form inviado!')">
+
+        <label>Nome*: </label>
+        <input type="text" name="nome" required />
+        <br>
+        <label>Senha: </label>
+        <input type="password" name="senha" />
+        <br>
+        <label for="idade">Idade: </label>
+        <input type="number" name="idade" min="0" max="100" step="10"/>
+        <br>
+        <input type="email" name="email" placeholder="Digite o email..."/>
+        <br>
+        <input type="date" name="datanasc" />
+        <br>
+        <input type="file" name="arquivo" />
+        <br>
+        <label>Quais seus times favoritos?</label>
+        <br>
+        <input type="checkbox" name="cru" />
+        <label style="color:blue">Cruzeiro</label>
+        <br>
+        <input type="checkbox" name="fla" />
+        <label>Flamengo</label>
+        <br>
+        <input type="checkbox" name="vas" />
+        <label>Vasco</label>
+        <br>
+        <label>Selecione sua nacionalidade</label>
+        <br>
+        <input type="radio" name="nacionalidade" value="brasil" />
+        <label>Brasil</label>
+        <input type="radio" name="nacionalidade" value="arg" />
+        <label>Argentina</label>
+        <input type="radio" name="nacionalidade" value="paraguai" />
+        <label>Paraguai</label>
+        <br>
+        <label>Estado</label>
+        <select>
+            <option value="x" >Selecione</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="go" selected>Goiás</option>
+            <option value="pe">Pernambuco</option>
+            <option value="ac">Acre</option>
+        </select>
+        <br>
+        <label>Observações</label>
+        <textarea name="obs">Texto longo..........</textarea>
+        <br>
+        
+
+
+
+        <button type="submit">Teste 3</button>
+        <button type="button" onclick="alert('clicou')">Trata com JS</button>
+        <button type="reset">Limpar campos</button>
+
+    </form>
 </body>
 </html>
